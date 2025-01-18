@@ -1,0 +1,229 @@
+/* Fonts used : Poppins, Inter. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.bg-img{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    position: absolute;
+    right: 30px;
+}
+.nav-links li{
+    position: relative;
+}
+.nav-links li::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: #00abf0;
+    height: 2px;
+    width: 0;
+    transition: .2s ease-in-out;
+}
+.nav-links li:hover::before{
+    width: 50%;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    left: 50px;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #00abf0;
+}
+.main-head{
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 100px;
+    text-transform: uppercase;
+    position: relative;
+}
+.main-head::before{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 2px;
+    width: 50%;
+    background: #00abf0;
+}
+.home-container{
+    padding: 120px 80PX;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 700px;
+    width: 100vw;
+}
+.sub-head{
+    font-size: 30px;
+    font-weight: 300;
+}
+.moon-pic{
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    scale: 1.5;
+    animation: rotate 70s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        top: 50px;
+        right: 150px;
+        transform: rotate(0) translateY(60px) translateY(-100px) scale(0.5);
+    }
+    50%{
+        top: 300px;
+        right: 50px;
+        transform: rotate(360deg) translateY(-60px) translateY(40px) scale(1.5);
+    }
+    100%{
+        top: 50px;
+        right: 150px;
+        transform: rotate(0) translateY(60px) translateY(-40px) scale(0.5);
+    }
+}
+.home-text{
+    padding-right: 550px;
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: .95;
+}
+.btn-box{
+    margin-top: 35px;
+}
+.btn-box a {
+    margin-right: 25px;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 12px 2px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .25s ease-in-out;
+}
+/* .btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    background: white;
+    z-index: -1;
+    transition: .25s ease-in-out;
+} */
+/* .btn-box a:hover::before{
+    width: 100%;
+} */
+.btn-box a:hover{
+    background: white;
+    color: black;
+}
+.credit-box{
+    position: absolute;
+    bottom: -50px;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+}
+.credit-box p{
+    font-size: 12px;
+}
+.credit-box p a{
+    position: relative;
+}
+.credit-box p a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #00abf0;
+    height: 1px;
+    width: 0;
+    transition: .25s ease-in-out;
+}
+.credit-box p a:hover::before{
+    width: 100%;
+}
+.articles-box{
+    margin-top: 30px;
+}
+.article-head{
+    font-size: 30px;
+    font-weight: 300;
+}
+.article-card{
+    margin-top: 30px;
+    height: 170px;
+    width: 400px;
+    /* background: pink; */
+    z-index: 1;
+    padding: 15px 0;
+}
+.card-head{
+    font-size: 17px;
+    font-weight: 250;
+}
+.card-text{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.card-btn{
+    font-size: 15px;
+    font-weight: 250;
+    position: relative;
+}
+.card-btn::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 84%;
+    background: #00abf0;
+}
