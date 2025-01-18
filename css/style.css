@@ -103,23 +103,23 @@ header{
     right: 50px;
     top: 200px;
     scale: 1.5;
-    animation: rotate 70s linear infinite;
+    animation: rotate 85s linear infinite;
 }
 @keyframes rotate{
     0%{
         top: 50px;
         right: 150px;
-        transform: rotate(0) translateY(60px) translateY(-100px) scale(0.5);
+        transform: rotate(0) translateX(-60px) translateY(-100px) scale(0.5);
     }
     50%{
         top: 300px;
         right: 50px;
-        transform: rotate(360deg) translateY(-60px) translateY(40px) scale(1.5);
+        transform: rotate(360deg) translateX(60px) translateY(40px) scale(1.5);
     }
     100%{
         top: 50px;
         right: 150px;
-        transform: rotate(0) translateY(60px) translateY(-40px) scale(0.5);
+        transform: rotate(0) translateX(-60px) translateY(-40px) scale(0.5);
     }
 }
 .home-text{
