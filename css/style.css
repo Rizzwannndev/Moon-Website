@@ -190,6 +190,17 @@ header{
 }
 .articles-box{
     margin-top: 30px;
+    position: relative;
+}
+.articles-box::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 2px;
+    width: 50%;
+    background:  #00abf0;
+    opacity: .8;
 }
 .article-head{
     font-size: 30px;
