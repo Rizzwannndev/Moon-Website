@@ -105,6 +105,9 @@ header{
     scale: 1.5;
     animation: rotate 85s linear infinite;
 }
+/* .moon-pic:hover{
+    animation-play-state: paused !important;
+} */
 @keyframes rotate{
     0%{
         top: 50px;
